@@ -1,0 +1,28 @@
+{
+  "name": "angry-moustache/rambo-neo",
+  "description": "Rambo CMS",
+  "keywords": [],
+  "license": "MIT",
+  "require": {
+    "php": "^8.0",
+    "laravel/laravel": "^9.0",
+    "livewire/livewire": "^2.0"
+  },
+  "autoload": {
+    "files": [
+        "src/helpers.php"
+    ],
+    "psr-4": {
+      "AngryMoustache\\Rambo\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+        "providers": [
+            "AngryMoustache\\Rambo\\Providers\\RamboServiceProvider"
+        ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
